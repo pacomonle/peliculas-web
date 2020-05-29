@@ -1,0 +1,14 @@
+#root > div > div > section > main > div > div.ant-row > div:nth-child(2){
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 50px !important;
+}
+
+
+#root > div > div > section > main > div > div.ant-row > div:nth-child(2) > ul{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}

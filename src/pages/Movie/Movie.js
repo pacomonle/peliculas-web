@@ -36,6 +36,8 @@ const RenderMovie = ({movieInfo}) => {
 
   const backdropPath = `https://image.tmdb.org/t/p/original${backdrop_path}`;
 
+  console.log('poster', movieInfo, poster_path)
+
   return (
     <div
       className="movie"
@@ -58,9 +60,17 @@ const RenderMovie = ({movieInfo}) => {
 
   const PosterMovie = (props) => {
     const { image } = props;
+    console.log('poster movie', image)
+
+// https://image.tmdb.org/t/p/original/kK6Oq4JywUNXmJ299efUkv1h6Mn.jpg
+
     const posterPath = `https://image.tmdb.org/t/p/original${image}`;
   
-    return <div style={{ backgroundImage: `url('${posterPath}')` }} />;
+    return (
+      <div style={{ backgroundImage: `url('${posterPath}')` }}>
+      <img src={posterPath} alt="MDN"></img>
+      </div>
+      );
   }
   
 // componente interno  
