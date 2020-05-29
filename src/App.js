@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Layout>
         <Router>
-          <Header>
+          <Header style={{ zIndex: 1 }}>
             <MenuTop></MenuTop>
           </Header>
           <Content>

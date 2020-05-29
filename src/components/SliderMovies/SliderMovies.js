@@ -29,7 +29,7 @@ const image =`https://image.tmdb.org/t/p/original/${backdrop_path}`
                   <h2>{title}</h2>
                    <p>{overview}</p>
                    <Link to={`movie/${id}`}>
-                   <Button type='primary'>Ver mas</Button>
+                        <Button type='primary'>Ver mas</Button>
                    </Link>
               </div>
           </div>
@@ -40,9 +40,8 @@ const image =`https://image.tmdb.org/t/p/original/${backdrop_path}`
 
 
 
-if(movies.loading || !movies.result){
-    return 'LOading..'
-} 
+
+
 
 const {results} = movies.result
 
